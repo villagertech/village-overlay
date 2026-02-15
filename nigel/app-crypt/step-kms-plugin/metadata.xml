@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>rome@villagertech.com</email>
+		<name>Rob MacKinnon</name>
+	</maintainer>
+	<maintainer type="project">
+		<url>https://github.com/smallstep/step-kms-plugin</url>
+		<name>Smallstep KMS Plugin</name>
+	</maintainer>
+	<longdescription lang="en">
+	step plugin to manage keys and certificates on cloud KMSs and hardware based HSMs.
+	</longdescription>
+	<upstream>
+		<remote-id type="github">smallstep/step-kms-plugin</remote-id>
+	</upstream>
+	<use>
+		<flag name="bash">Install bash completion scripts</flag>
+		<flag name="fish">Install fish completion scripts</flag>
+		<flag name="zsh">Install zsh completion scripts</flag>
+		<flag name="softhsm">Enable support for software based HSM</flag>
+	</use>
+</pkgmetadata>
