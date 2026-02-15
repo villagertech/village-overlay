@@ -1,0 +1,22 @@
+--- poldi-0.4.1/tests/Makefile.am.orig	2019-01-20 17:38:27.338850800 -0800
++++ poldi-0.4.1/tests/Makefile.am	2019-01-20 17:38:46.402810731 -0800
+@@ -22,7 +22,7 @@
+ parse_test_SOURCES = parse-test.c
+ parse_test_CFLAGS = -Wall -I$(top_srcdir)/src/util -I$(top_srcdir)/src
+ 
+-parse_test_LDADD = $(top_builddir)/src/util/libpoldi-util.a -lgcrypt
++parse_test_LDADD = $(top_builddir)/src/util/libpoldi-util.a -lgcrypt -lgpg-error
+ 
+ pam_test_SOURCES = pam-test.c
+ pam_test_CFLAGS = -Wall
+--- poldi-0.4.1/tests/Makefile.in.orig	2019-01-20 17:52:24.869092926 -0800
++++ poldi-0.4.1/tests/Makefile.in	2019-01-20 17:52:44.500051747 -0800
+@@ -220,7 +220,7 @@
+ top_srcdir = @top_srcdir@
+ parse_test_SOURCES = parse-test.c
+ parse_test_CFLAGS = -Wall -I$(top_srcdir)/src/util -I$(top_srcdir)/src
+-parse_test_LDADD = $(top_builddir)/src/util/libpoldi-util.a -lgcrypt
++parse_test_LDADD = $(top_builddir)/src/util/libpoldi-util.a -lgcrypt -lgpg-error
+ pam_test_SOURCES = pam-test.c
+ pam_test_CFLAGS = -Wall
+ pam_test_LDADD = -lpam -lpam_misc

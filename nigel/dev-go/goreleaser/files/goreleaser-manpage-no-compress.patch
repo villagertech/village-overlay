@@ -1,0 +1,8 @@
+--- a/scripts/manpages.sh
++++ b/scripts/manpages.sh
+@@ -2,4 +2,4 @@
+ set -e
+ rm -rf manpages
+ mkdir manpages
+-go run . man | gzip -c -9 >manpages/goreleaser.1.gz
++go run . man >manpages/goreleaser.1

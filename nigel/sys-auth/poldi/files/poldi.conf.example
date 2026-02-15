@@ -1,0 +1,10 @@
+#See `info poldi`
+
+#ctapi-driver <driver name>
+#pcsc-driver <driver name>
+#reader-port <reader port>
+#disable-ccid
+#disable-opensc
+#debug-ccid-driver
+#fake-wait-for-card
+#logfile

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>rome@villagertech.com</email>
+		<name>Rob MacKinnon</name>
+	</maintainer>
+	<slots>
+		<slot name="0">Default</slot>
+		<slot name="9999">Live version</slot>
+	</slots>
+	<upstream>
+		<remote-id type='github'>goreleaser/goreleaser</remote-id>
+	</upstream>
+</pkgmetadata>
