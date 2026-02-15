@@ -16,4 +16,10 @@
 	<upstream>
 		<remote-id type="github">smallstep/cli</remote-id>
 	</upstream>
+	<use>
+		<flag name="bash">Install bash completion scripts</flag>
+		<flag name="fish">Install fish completion scripts</flag>
+		<flag name="zsh">Install zsh completion scripts</flag>
+		<flag name="softhsm">Enable support for software based HSM</flag>
+	</use>
 </pkgmetadata>
